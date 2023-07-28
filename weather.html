@@ -1,0 +1,65 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project Weather App </title>
+    <link rel="stylesheet" href="weather.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="search-box">
+                <input type="text" placeholder="Enter your location" class="input-box">
+                <button class="bi bi-search" id="searchBtn"></button>
+            </div>
+        </div>
+
+        <div class="location-not-found">
+            <h1>Sorry, Location not found!!!</h1>
+            <img src="/asset/404.png" alt="404 Error">
+        </div>
+
+        <div class="weather-body">
+        
+            <div class="clouds"></div> 
+
+
+            <i class="fas fa-cloud weather-icon"></i> 
+            <div class="weather-box">
+                
+                <p class="temperature">0 <sup>°C</sup></p>
+                <p class="description">light rain</p>
+                <p class="city">City, Country</p>
+                <p class="datetime">Thursday,July20,2023 at 8:30AM</p>
+                <p class="min-max-temp">Min: 0°C | Max: 0°C</p>
+
+            <div class="weather-details">
+                <div class="humidity">
+                    <i class="fas fa-tint"></i> 
+                    <div class="text">
+                        <span id="humidity">45%</span>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+
+                <div class="wind">
+                    <i class="fas fa-wind"></i> 
+                    <div class="text">
+                        <span id="wind-speed">12Km/H</span>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+            <button class="save-location-btn">Save Location</button>
+            <div class="saved-locations-container">
+            
+        </div>
+    </div>
+    <script src="weather.js"></script>
+</body>
+</html>
